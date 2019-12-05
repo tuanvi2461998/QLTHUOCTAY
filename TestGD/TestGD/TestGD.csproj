@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8BCCB55-0F43-4305-9BFA-FB5A97548135}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestGD</RootNamespace>
+    <AssemblyName>TestGD</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1" />
+    <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formThemDVT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formThemDVT.Designer.cs">
+      <DependentUpon>formThemDVT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDangNhap.Designer.cs">
+      <DependentUpon>formDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDonViCB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDonViCB.Designer.cs">
+      <DependentUpon>formDonViCB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDonViTinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDonViTinh.Designer.cs">
+      <DependentUpon>formDonViTinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDoiMatKhau.Designer.cs">
+      <DependentUpon>formDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHDBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHDBan.Designer.cs">
+      <DependentUpon>formHDBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formKhachHang.Designer.cs">
+      <DependentUpon>formKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLoaiThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLoaiThuoc.Designer.cs">
+      <DependentUpon>formLoaiThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formNhaSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formNhaSanXuat.Designer.cs">
+      <DependentUpon>formNhaSanXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formQLNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formQLNhanVien.Designer.cs">
+      <DependentUpon>formQLNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formThongTinTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formThongTinTaiKhoan.Designer.cs">
+      <DependentUpon>formThongTinTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formThongTinThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formThongTinThuoc.Designer.cs">
+      <DependentUpon>formThongTinThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formTimHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTimHD.Designer.cs">
+      <DependentUpon>formTimHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTrangChu.Designer.cs">
+      <DependentUpon>formTrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLTHUOCTAYcomboboxdvt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYcomboboxdvt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSetDVCB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSetDVCB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUOCTAYDataSetDVT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUOCTAYDataSetDVT.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="formDangNhap.resx">
+      <DependentUpon>formDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDonViCB.resx">
+      <DependentUpon>formDonViCB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDonViTinh.resx">
+      <DependentUpon>formDonViTinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDoiMatKhau.resx">
+      <DependentUpon>formDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHDBan.resx">
+      <DependentUpon>formHDBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formKhachHang.resx">
+      <DependentUpon>formKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLoaiThuoc.resx">
+      <DependentUpon>formLoaiThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formNhaSanXuat.resx">
+      <DependentUpon>formNhaSanXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formQLNhanVien.resx">
+      <DependentUpon>formQLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formThemDVT.resx">
+      <DependentUpon>formThemDVT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formThongTinTaiKhoan.resx">
+      <DependentUpon>formThongTinTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formThongTinThuoc.resx">
+      <DependentUpon>formThongTinThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTimHD.resx">
+      <DependentUpon>formTimHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTrangChu.resx">
+      <DependentUpon>formTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLTHUOCTAYcomboboxdvt.xsc">
+      <DependentUpon>QLTHUOCTAYcomboboxdvt.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYcomboboxdvt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYcomboboxdvt.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYcomboboxdvt.xss">
+      <DependentUpon>QLTHUOCTAYcomboboxdvt.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet.xsc">
+      <DependentUpon>QLTHUOCTAYDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSet.xss">
+      <DependentUpon>QLTHUOCTAYDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet1.xsc">
+      <DependentUpon>QLTHUOCTAYDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSet1.xss">
+      <DependentUpon>QLTHUOCTAYDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet2.xsc">
+      <DependentUpon>QLTHUOCTAYDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSet2.xss">
+      <DependentUpon>QLTHUOCTAYDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet3.xsc">
+      <DependentUpon>QLTHUOCTAYDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSet3.xss">
+      <DependentUpon>QLTHUOCTAYDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet4.xsc">
+      <DependentUpon>QLTHUOCTAYDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSet4.xss">
+      <DependentUpon>QLTHUOCTAYDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet5.xsc">
+      <DependentUpon>QLTHUOCTAYDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSet5.xss">
+      <DependentUpon>QLTHUOCTAYDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet6.xsc">
+      <DependentUpon>QLTHUOCTAYDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSet6.xss">
+      <DependentUpon>QLTHUOCTAYDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet7.xsc">
+      <DependentUpon>QLTHUOCTAYDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSet7.xss">
+      <DependentUpon>QLTHUOCTAYDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet8.xsc">
+      <DependentUpon>QLTHUOCTAYDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSet8.xss">
+      <DependentUpon>QLTHUOCTAYDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet9.xsc">
+      <DependentUpon>QLTHUOCTAYDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSet9.xss">
+      <DependentUpon>QLTHUOCTAYDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSetDVCB.xsc">
+      <DependentUpon>QLTHUOCTAYDataSetDVCB.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSetDVCB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSetDVCB.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSetDVCB.xss">
+      <DependentUpon>QLTHUOCTAYDataSetDVCB.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSetDVT.xsc">
+      <DependentUpon>QLTHUOCTAYDataSetDVT.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUOCTAYDataSetDVT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUOCTAYDataSetDVT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUOCTAYDataSetDVT.xss">
+      <DependentUpon>QLTHUOCTAYDataSetDVT.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\usergroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productshipments_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recurrence_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stackedcolumn_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
